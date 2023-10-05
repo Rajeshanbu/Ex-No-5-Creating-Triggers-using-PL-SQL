@@ -15,7 +15,7 @@
 ### Program:
 SQL> CREATE TABLE emp(empid number, empname varchar(10), dept varchar(10),salary number);
 Table created.
-```
+```sql
 SQL> CREATE TABLE salary_log (log_id NUMBER GENERATED ALWAYS AS IDENTITY, empid NUMBER, empname VARCHAR2(10), old_salary NUMBER, new_salary NUMBER, update_date DATE);
 Table created.
 
@@ -34,7 +34,7 @@ values(3,'Balram','IT',50000);
 ![exp5-2](https://github.com/Rajeshanbu/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/118924713/cdd4628e-e58c-49a3-91b4-317390ffac70)
 
 ### PLSQL Trigger code
-```
+```sql
 SQL> -- Create the trigger
 SQL> CREATE OR REPLACE TRIGGER log_salary__update
   2  BEFORE UPDATE ON emp
